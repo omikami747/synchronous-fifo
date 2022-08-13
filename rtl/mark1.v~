@@ -1,0 +1,28 @@
+module mk1(
+	   din,
+	   w_en,
+	   r_en,
+	   dout,
+	   clk,
+	   rst
+	   );
+   input  [7:0]    din  ;
+   input 	   r_en ;
+   input 	   w_en ;
+   input 	   clk  ;
+   input 	   rst  ;
+   output [7:0]    dout ;
+
+   reg [7:0] 	   mem [7:0];
+   reg [2:0] 	   r_ptr    ;
+   reg [2:0] 	   w_ptr    ;
+		   
+   always @(posedge clk or negedge rst)
+     begin
+	if (rst === 1'b0)
+	  begin
+	     
+     end
+   
+   
+endmodule // mk1
